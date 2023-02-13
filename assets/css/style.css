@@ -157,6 +157,18 @@ section,footer{
     height: 700px;
 }
 
+@media screen and (min-width:1366px){
+    .slider {
+        height: 100vh;
+    }
+    
+    .carousel {
+        height: 100vh;
+    }   
+}
+
+
+
 .carousel-caption {
     bottom: unset;
     left: 10%;
