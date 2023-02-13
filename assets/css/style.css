@@ -1,0 +1,631 @@
+html{
+    scroll-behavior: smooth;
+ }
+
+body{
+    background-color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Oswald', sans-serif;
+}
+
+section {
+    padding: 60px 0;
+    margin: 100px auto;
+}
+
+#secoes{
+    padding:0;
+    margin-top: 100px;
+    min-height: 600px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+section,footer{
+    background-color: #000;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    font-family: 'Oswald', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+.logo{
+    transition: all ease-in-out 0.3s;
+    height: 80px;
+}
+
+@media screen and (max-width:767px){
+    .logo {
+        height: 50px !important;
+    }
+}
+
+.navbar-brand {
+    margin-left: 20px;
+}
+
+@media screen and (max-width:767px){
+    .navbar-brand {
+        margin-left: 0;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.navbar-dark .navbar-toggler, .navbar-dark .navbar-toggler:hover {
+    border-color: rgba(0,0,0,.1);
+    color: rgba(255,255,255,1);
+    font-size: 30px;
+    padding: 11px;
+}
+
+.dropdown-item {
+    color: #fff;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 20px 0 20px 10px;
+    background-color: rgba(255, 255, 255, 0.2);;
+    margin: 0;
+}
+
+.dropint{
+    border-left: 2px solid;
+}
+
+.dropint.di-amarelo{
+    border-color: #c8992c;
+}
+.dropint.di-vermelho{
+    border-color: #e55d3f;
+}
+.dropint.di-azul{
+    border-color: #487b9e;
+}
+.dropint.di-rosa{
+    border-color: #d19688;
+}
+.dropint.di-verde{
+    border-color: #726d46;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-item.show {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-item.show.fundo-black{
+    background-color: #000;
+}
+
+.ni-amarelo.show>a {
+    color: #c8992c !important;
+}
+.ni-vermelho.show>a {
+    color: #e55d3f !important;
+}
+.ni-azul.show>a {
+    color: #487b9e !important;
+}
+.ni-rosa.show>a {
+    color: #d19688 !important;
+}
+.ni-verde.show>a {
+    color: #726d46 !important;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.classe-esquerda {
+    left: -266px;
+}
+
+.slider {
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 320px;
+}
+
+.carousel {
+    height: 100vh;
+}
+
+.carousel-caption {
+    bottom: unset;
+    left: 10%;
+    text-align: left;
+    width: 500px;
+    margin-top: 30%;
+}
+
+@media screen and (max-width:1366px){
+    .carousel-caption {
+        margin-top: 20%;
+    }
+}
+
+.carousel-caption h2 {
+    font-size: 56px;
+    line-height: initial;
+}
+
+.carousel-indicators{
+    bottom: 20px;
+}
+
+.carousel-caption h2 span {
+    padding: 0 10px;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:767px){
+    .carousel img {
+        height: 100vh;
+        width: unset !important;
+    }
+
+    .carousel-caption {
+        bottom: unset;
+        left: 10%;
+        text-align: left;
+        width: 500px;
+        margin-top: 50%;
+        max-width: 100%;
+        display: block !important;
+    }
+
+    .carousel-caption h2 {
+        font-size: 17px;
+        line-height: initial;
+    }
+}
+
+.ap-vermelho{
+    background-color: #e55d3f;
+    font-size: 6rem;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:767px){
+    .ap-vermelho{
+        background-color: #e55d3f;
+        font-size: 25px;
+    }
+}
+
+.ap-amarelo{
+    background-color: #c8992c;
+}
+
+.ap-azul{
+    background-color: #487b9e;
+}
+
+.ap-rosa{
+    background-color: #d19688;
+}
+
+h2.titulo-not {
+    display: block;
+    position: absolute;
+    top: -20px;
+    color: #fff;
+    background-color: #d19688;
+    padding: 3px 40px;
+    font-size: 28px;
+    left: 0;
+}
+
+.noticia-home {
+    border-left: 5px solid #fff;
+    padding-left: 20px;
+    min-height: 245px;
+    font-size: 40px;
+}
+.noticia2 {
+    padding-top: 50px;
+}
+
+#noticias-area {
+    position: relative;
+    margin-bottom: 280px;
+}
+
+.noticia-home a {
+    color: #fff;
+}
+
+#noticias-area p {
+    color: #fff;
+    padding: 12px 25px;
+}
+
+.item-secoes {
+    width: 20%;
+    display: block;
+    float: left;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-position: 20% top;
+}
+
+.item-secoes1{
+    background-image: url('../images/item-sec1.jpg');
+}
+
+.item-secoes2 {
+    background-image: url('../images/item-sec2.jpg');
+    background-position: 50% top;
+}
+
+.item-secoes3{
+    background-image: url('../images/item-sec3.jpg');
+    background-position: 88% top;
+}
+
+.item-secoes4{
+    background-image: url('../images/item-sec4.jpg');
+    background-position: center top;
+}
+
+.item-secoes5   {
+    background-image: url('../images/item-sec5.jpg');
+    background-position: 30% top;
+}
+
+.item-secoes h2 {
+    background-color: #000;
+    color: #fff;
+    line-height: 50px;
+    margin: 0;
+    display: inline-block;
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+.item-secoes p {
+    background-color: rgba(255, 255, 255,0.9);
+    color: #000;
+    width: 70%;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 15px;
+}
+
+.ap-secoes {
+    position: absolute;
+    top: 70%;
+}
+
+@media screen and (max-width: 991px){
+    .item-secoes {
+        width: 100%;
+        min-height: 400px;
+        background-position: center;
+    }
+    
+    .ap-secoes {
+        position: absolute;
+        top: 60%;
+    }
+}
+
+#secoes .container-fluid {
+    padding: 0;
+}
+
+.galeria1, .galeria2{
+    position: relative;
+}
+
+#galeria-area1 {
+    margin-top: 140px;
+}
+
+#galeria-area2 {
+    margin-bottom: 180px;
+}
+
+.galeria-titulo {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    color: #fff;
+    padding: 10px 10px 30px;
+    background-color: rgba(0, 0, 0, .6);
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.titulo-galeria {
+    background-color: #d19688;
+    color: #fff;
+    font-size: 45px;
+    position: absolute;
+    top: -40px;
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+#galeria-area1, #galeria-area2 {
+    background-color: #fff;
+}
+
+/* Sobre */
+
+.pagina-sobre h3{
+    color: #c8992c;
+    
+}
+
+.pagina-sobre .jumbo{
+    background-image: url("../images/item-sec1.jpg");
+}
+
+.jumbo {
+    height: 70vh;
+    margin-top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+}
+
+.titulo-sec {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+@media screen and (max-width:767px){
+    .titulo-sec {
+        font-size: 3rem;
+    }
+}
+
+.secundarias h3{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 33px;
+}
+
+.secundarias p{
+    font-size: 28px;
+}
+
+.secundarias section{
+    background-color: transparent;
+}
+
+blockquote.blockquote {
+    font-size: 25px;
+}
+
+/* Notícias */
+
+.pagina-noticias .jumbo{
+    background-image: url("../images/item-sec2.jpg");
+}
+
+.pagina-noticias h3{
+    color: #e55d3f;
+}
+
+.pagina-noticias section a{
+    font-weight: bold;
+    color: #000;
+}
+
+.pagina-noticias .linha-not{
+    margin-top: 60px;
+}
+
+.logo-nots {
+    margin: 30px auto;
+    display: block;
+}
+
+/* A Bienal */
+
+.pagina-bienal .jumbo{
+    background-image: url("../images/item-sec3.jpg");
+}
+
+.pagina-bienal h3{
+    color: #487b9e;    
+}
+
+.pagina-bienal section a{
+    font-weight: bold;
+    color: #000;
+}
+
+/* Participe */
+
+.pagina-participe .jumbo{
+    background-image: url("../images/item-sec4.jpg");
+}
+
+.pagina-participe h3{
+    color: #d19688; 
+}
+
+.pagina-participe section a{
+    font-weight: bold;
+    color: #000;
+}
+
+.pagina-participe .linha-part{
+    margin-top: 60px;
+}
+
+#produtos h4 {
+    font-size: 20px;
+    text-align: center;
+    min-height: 53px;
+}
+
+#produtos p{
+    text-align: center;
+}
+
+.produto{
+    position: relative;
+}
+
+.produto figcaption {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #d19688;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Contato */
+
+.pagina-contato .jumbo{
+    background-image: url("../images/item-sec5.jpg");
+}
+
+.pagina-contato h3{
+    color: #726d46;
+    margin: 20px auto;
+}
+
+.pagina-contato section a{
+    color: #000;
+}
+
+iframe {
+    width: 100%;
+}
+
+.pagina-contato button.btn.btn-primary {
+    background-color: #726d46;
+    border: 0;
+}
+
+/* Rodapé */
+.final{
+    padding: 100px 0;
+}
+
+.logo-rodape{
+    margin: 0 auto;
+    display: block;
+}
+
+.volta-topo {
+    display: block;
+    margin: 35px auto;
+    padding: 5px 15px;
+    border: 3px solid #fff;
+    width: 270px;
+    text-align: center;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+
+.volta-topo:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+}
+
+.copy-footer {
+    background-color: #939393;
+    text-align: center;
+}
+
+.copy-footer i {
+    margin: 60px auto 40px;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+}
+
+p.copyright {
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 18px;
+}
+
+.load {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #fff  ;
+    z-index: 1000;
+ }
+
+ .load img {
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+}
+
+.voltar-topo {
+    border: 3px solid #d19688;
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-size: 26px;
+}
+        
+.voltar-topo i{
+    color: #d19688;
+}
