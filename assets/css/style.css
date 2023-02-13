@@ -13,7 +13,7 @@ h1,h2,h3{
 
 section {
     padding: 60px 0;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 #secoes{
@@ -150,7 +150,7 @@ section,footer{
     overflow: hidden;
     padding: 0;
     margin-top: 0;
-    margin-bottom: 320px;
+    margin-bottom: 80px;
 }
 
 .carousel {
@@ -278,7 +278,6 @@ h2.titulo-not {
 
 #noticias-area {
     position: relative;
-    margin-bottom: 280px;
 }
 
 .noticia-home a {
