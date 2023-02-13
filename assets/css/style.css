@@ -167,14 +167,18 @@ section,footer{
     }   
 }
 
-
-
 .carousel-caption {
     bottom: unset;
     left: 10%;
     text-align: left;
     width: 500px;
     margin-top: 30%;
+}
+
+@media screen and (min-width: 1440px){
+    .carousel-caption {
+        margin-top: 20%;
+    }
 }
 
 @media screen and (max-width:1366px){
